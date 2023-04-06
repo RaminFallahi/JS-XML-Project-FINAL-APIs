@@ -1,0 +1,15 @@
+extends layout
+
+block main-content
+  - var links = [{name: 'Home', path: '/'}, {name: 'Result', path: '/result'}]
+
+  h2(class="question") #{question}
+  h1(class="answer") 😂 #{answer}
+  h3(class="weather") Current Weather in Toronto:
+  div
+    i(class="weather-icon wi wi-day-cloudy")
+    div(class="weather-info")
+      p #{weather.description}
+      p #{weather.temperature}°C
+  p
+    a(href="/result") Get another joke!

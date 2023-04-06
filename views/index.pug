@@ -1,0 +1,17 @@
+extends layout.pug
+
+block variables
+  - var title = 'Home'
+
+block main-content
+  h1 Welcome to the Weather Joke App
+  nav
+    ul
+      li
+        a(href="/result") Result
+      li
+        a(href="/about") About
+  section
+    h2 Get a Joke About Toronto's Weather
+    p
+      | Click on the "Result" link in the navigation menu to get a weather-related joke about Toronto's temperature. This app uses the OpenAI API to generate jokes, so you'll get a new joke every time you visit the Result page.

@@ -1,0 +1,23 @@
+extends layout.pug
+
+block variables
+  - var title = 'About'
+
+block main-content
+  h1 About the Weather Joke App
+  nav
+    ul
+      li
+        a(href="/result") Result
+      li
+        a(href="/") Home
+  section
+    h2 About This App
+    p
+      | This app uses the OpenAI API to generate a weather-related joke about Toronto's temperature. When you visit the Result page, the app will make a request to the OpenAI API, and it will display the joke in the form of a question and answer.
+    h2 Technologies Used
+    ul
+      li Node.js
+      li Express.js
+      li OpenAI API
+      li Pug template engine
